@@ -12,7 +12,7 @@ export function useAsyncDataEffect<T>(
     stateName: string;
     otherStatesToMonitor?: unknown[];
     setter: (arg: T) => void;
-  }
+  },
 ): void {
   let cancelled = false;
   const { setter, stateName } = options;
@@ -31,7 +31,7 @@ export function useAsyncDataEffect<T>(
         if (!cancelled) {
           console.info(
             "%c Updating state: " + stateName,
-            "background: green; color: white; display: block;"
+            "background: green; color: white; display: block;",
           );
           setter(data);
         }
@@ -40,5 +40,5 @@ export function useAsyncDataEffect<T>(
     return () => {
       cancelled = true;
     };
-  }, [...(options.otherStatesToMonitor || []), stateName]);
+  }, [...(options.otherStatesToMonitor ?? []), stateName]);
 }
