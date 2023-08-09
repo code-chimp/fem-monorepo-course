@@ -16,7 +16,7 @@ yarn add -D @babel/preset-env @babel/preset-typescript @types/jest jest
 
 Jest uses babel to convert TS to JS, so we'll need to create a few babel config files.
 
-### [`packages/.babelrc`](../packages/.babelrc)
+### [`packages/.babelrc`](../packages/babel.config.json)
 
 ```json
 {
@@ -31,7 +31,7 @@ Jest uses babel to convert TS to JS, so we'll need to create a few babel config 
 
 ```json
 {
-  "extends": "../.babelrc"
+  "extends": "../babel.config.json"
 }
 ```
 
@@ -39,7 +39,7 @@ Jest uses babel to convert TS to JS, so we'll need to create a few babel config 
 
 ```json
 {
-  "extends": "../.babelrc"
+  "extends": "../babel.config.json"
 }
 ```
 
