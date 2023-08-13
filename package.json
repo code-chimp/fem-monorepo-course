@@ -5,7 +5,7 @@
   "repository": "git@github.com:mike-north/js-ts-monorepos.git",
   "author": "Mike North <michael.l.north@gmail.com>",
   "license": "BSD-2-Clause",
-  "private": false,
+  "private": true,
   "volta": {
     "node": "16.20.1",
     "yarn": "1.22.18"
@@ -35,7 +35,7 @@
     "husky": "^8.0.0",
     "lerna": "^6.6.2",
     "lerna-changelog": "^2.2.0",
-    "prettier": "^3.0.1",
+    "prettier": "2.4.1",
     "rimraf": "^5.0.1",
     "scripty": "^2.1.1",
     "typescript": "^5.1.6"
